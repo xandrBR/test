@@ -1,0 +1,134 @@
+.top_box{
+    display: flex;
+    flex-direction: row;
+    height: 36%;
+    justify-content: space-between;
+    width: 100%;
+}
+/*slaider start*/
+.slaider{
+    height: 100%;
+    width: 55%;
+    background-color: rgba(36,62,86, 0.7);
+    position: relative;
+}
+.slaid_active{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slaid{
+    display:none;
+}
+.slaider_link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.switchers{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.switcher_conteiner{
+    height: 100%;
+    width: 10%;
+}
+.switcher{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    height: 100%;
+    width: 100%;
+    background-color: #243E56;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    visibility: hidden;
+}
+/*slaider end*/
+.counter_of_wins{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 13, 156, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.VK_social{
+    height: 100%;
+    width: 20%;
+    background-color: crimson;
+}
+.bottom_box{
+    display: flex;
+    flex-direction: row;
+    height: 62%;
+    justify-content: space-between;
+    width: 100%;
+}
+.week_top{
+    height: 100%;
+    width: 40%;
+    background-color: aqua;
+}
+.center_of_bottom_box{
+    height: 100%;
+    width: 35%;
+    justify-content: space-between;
+}
+.counter_of_plays{
+    height: 15%;
+    width: 100%;
+}
+.fast_game{
+    height: 82%;
+    width: 100%;
+    background-color: lightseagreen;
+}
+.history_of_games{
+    height: 100%;
+    width: 20%;
+    background-color: darkorchid;
+}
+.center_of_bottom_box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table1{
+    /* box-sizing: content-box; */
+    border: 4px ridge #202020;
+    background-color: darkslateblue;
+    height: 100%;
+    font-family: nav;
+    font-size: 3vw;
+    width: 100%;
+
+    text-align: center;
+    /* vertical-align: middle; */
+    display: inline-table;
+}
+.td_of_players{
+	height: 100%;
+    vertical-align: middle;
+}
+.wins{
+	border: 4px ridge #202020;
+    background-color: darkslateblue;
+    margin: 0% 5%;
+    height: 12vh;
+    text-align: center;
+    font-family: nav;
+    font-size: 4vw;
+    line-height: 11vh;
+}
+.p1{
+	color: white;
+    text-align: center;
+    font-size: 2.5vh;
+}

@@ -1,0 +1,346 @@
+@font-face{
+    font-family: "classic";
+    src: url('../fonts/classic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "title";
+    src: url('../fonts/title.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "nav";
+    src: url('../fonts/nav.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "wanted";
+    src: url('../fonts/most_wanted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "subscribe";
+    src: url('../fonts/subscribe.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    overflow: hidden;
+    overflow-x: hidden;
+    color: #ffffff;
+    font-family: classic, sans-serif;
+}
+body{
+    min-height: 100vh;
+    max-height: 100vh;
+    ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-image: url("../background/w1.jpg");
+}
+/* ASSIDE START */
+asside{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(36, 62, 86, 1);
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    height: 6%;
+    margin-left: 1vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: default;
+}
+h3{
+    color: #ffa600;
+    font-family: title;
+    font-size: 3vw;
+    margin-left: 2%;
+    margin-top: 1vh;
+}
+.img_logo{
+    height: 5.5vh;
+    margin-left: 1%;
+    margin-top: 0.5vh;
+}
+.second_title_text{
+    font-size: 1em;
+    padding-left: 7vw;
+    position: absolute;
+    top: 6vh;
+}
+/* Nav start */
+nav{
+    height: 83%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.ul_of_nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.4%;
+}
+.nav_link{
+    cursor: pointer;
+    font-family: nav;
+    font-size: 2vw;
+    height: 10%;
+    line-height: 215%;
+    width: 100%;
+    transition: all 50ms ease 0s;
+}
+.nav_link:hover{
+    background-color: #243E71;
+}
+.li_of_nav{
+    height: 100%;
+    width:100%;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.material-icons{
+    height: 100%;
+    width: 13%;
+}
+strong{
+    font-family: wanted;
+}
+/* Nav end */
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+}
+.subscribe_title{
+    font-family: subscribe;
+    font-size: 3vw;
+    margin-left: 5vw;
+}
+.subscribe_imgs{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+}
+.subscribe_img{
+    width: 2.2vw;
+}
+/* ASSIDE END */
+
+/* MAIN START */
+main{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header start */
+header{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #243E56;
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+}
+.news{
+    width: 89%;
+    height: 100%;
+}
+.p_of_news{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.header_left{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+}
+.settings{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+.lang{
+    position: relative;
+    display: flex;
+    width: 35%;
+    height: 100%;
+}
+.ul_of_lang{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}
+.li_of_lang{
+    display:none;
+}
+.li_of_lang1{
+    display: block;
+}
+.LK{
+    width: 65%;
+    height: 100%;
+}
+.steam_link{
+    display: block;
+    height:100%;
+    width: 100%;
+}
+.steam{
+    content: "";
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    margin: 2.5% 0% 0;
+    width: 100%;
+}
+.img_of_lang_active{
+}
+/* Header end */
+
+/* Conteiner start */
+.conteiner{
+    height:95.5%;
+    position: relative;
+}
+.box{
+    position: relative;
+    box-sizing: content-box;
+    height: 97%;
+    margin: 1% 0 0 1%;
+    width: 98%;
+    background-color: rgba(36,62,86, 0.7);
+}
+.conteiner_of_box_content{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    justify-content: space-between;
+    margin: 1% 0 0 1%;
+    position: absolute;
+    width: 98%;
+}
+
+/* Conteiner end */
+
+
+/* Footer start */
+footer{
+    display: flex;
+    flex-direction: row;
+    height:  1.5%;
+}
+/*self_nav start*/
+.self_nav{
+    position: relative;
+    width: 80%;
+}
+.self_nav_title{
+    cursor: default;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(36,62,86, 1);
+    opacity: 0.9;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.main_of_self_nav{
+    background-color: rgb(36, 62, 86);
+    display: flex;
+    flex-direction: row;
+    height: 57vh;
+}
+/*self nav navigation start*/
+.asside_af_self_nav{
+    width: 30%;
+}
+.self_nav_container{
+    height: 100%;
+    width: 100%;
+}
+.ul_of_self_nav{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.self_nav_link{
+    display: block;
+    height: 17%;
+}
+.li_of_self_nav{
+    font-size: 2.5vh;
+    height: 100%;
+    line-height: 9vh;
+    transition: all 50ms ease 0s;
+}
+.li_of_self_nav:hover{
+    border: 2px solid white;
+    text-align: center;
+}
+/*self nav navigation end*/
+.self_nav_content{
+    width: 70%;
+}
+.self_nav_title:hover{
+    opacity: 1;
+}
+/*self_nav end*/
+.chat{
+    position: relative;
+    width: 20%;
+}
+.chat_title{
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    background-color: rgba(36,70,86, 1);
+    opacity: 0.9;
+    border-right: 1px solid black;
+}
+.chat_title:hover{
+    opacity: 1;
+}
+.main_of_chat{
+    background-color: white;
+    height: 57vh;
+}
+
+/* Footer end */
+/* MAIN  END */

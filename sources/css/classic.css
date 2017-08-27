@@ -1,0 +1,101 @@
+
+.game{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.carousel{
+    background-color: #200E4E;
+    height:87%;
+}
+.center_for_button{
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.green_button{
+    margin-top: auto;
+    height:90%;
+    width:25%;
+    background-color: #34C924;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    color: black;
+    font-size: 2.5vh;
+}
+.click_me{
+    margin-top: 0.3vh;
+}
+.green_button:hover{
+    opacity: 0.9
+}
+.about_game{
+   
+    background-color: rgba(36, 62, 86, 0.8);
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: overlay;
+}
+.about_game_item{
+    height:20px;
+    width: 20px;
+}
+.center_of_carousel{
+    position: relative;
+    box-sizing: content-box;
+    height: 85%;
+    margin: 1.5% 0 0 1%;
+    width: 98%;
+    /*background-color: #3B2E5C;*/
+    background-color: #2A1957;
+}
+.first_layer{
+    position: absolute;
+    background-color: #080808;
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+}
+.main_of_carousel {
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.carousel_items{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    width:100%;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.carousel_item{
+    height: 100%;
+}
+.second_layer{
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    background-image: url("#");
+
+}
+.about_game_item{
+    width: 10vh;
+    margin: 2vh;
+    height: 10vh;
+}
