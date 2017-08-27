@@ -1,6 +1,6 @@
 <?php 
 require 'openid/openid.php'; 
-$STEAMAPI = "98798566D0A8DA0C305F49760266BBF4"; 
+$STEAMAPI = "EFD43C071D1D24344693D58B7382DD93"; 
 try 
 { 
 $openid = new LightOpenID('http://steam-tests2.hol.es/register.php'); 
