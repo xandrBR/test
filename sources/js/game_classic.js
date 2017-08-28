@@ -46,9 +46,12 @@ function scroll(iCCL,b,alpha) {
     }
     return iCCL;
 }
+var gb=document.getElementById("gb1");
 var asd = 0;
 function move(alpha,beta,alph,w) {
     asd=1;
+    gb.style.pointerEvents="none";
+    gb.style.opacity="0.6";
     var t=setInterval(function () {
         CCL=scroll(CCL,10,alpha);
         if(CCL<=(beta/2)){
@@ -66,6 +69,8 @@ function move(alpha,beta,alph,w) {
                                 if(CCL<=alpha){
                                     clearInterval(t4);
                                     asd=2;
+                                    gb.style.pointerEvents="all";
+                                    gb.style.opacity="1";
                                     var cheker=setInterval(function(){
                                         var wnew=document.documentElement.clientWidth;
                                         if(wnew!=w){

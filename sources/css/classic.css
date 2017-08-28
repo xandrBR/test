@@ -25,6 +25,7 @@
     cursor: pointer;
     color: black;
     font-size: 2.5vh;
+    pointer-events: all;
 }
 .click_me{
     margin-top: 0.3vh;
