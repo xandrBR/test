@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-      <?php require 'sources/login/steamauth/steamauth.php';
-      loginbutton(); ?>;                      
+<head>                 
     <meta charset="UTF-8">
     <title>Abstract</title>
     <link rel="stylesheet" href="sources/css/reset.css">
@@ -56,7 +54,11 @@
                             </ul>
                         </form>
                     </div>
-                    <div class="LK"><a class="steam_link"><img class="steam" alt="" src="sources/img/steam_a.png"></a></div> <!--личный кабинет в начале кнопка-->
+                    <div class="LK">
+                        <?php require 'sources/login/steamauth/steamauth.php';
+                            loginbutton();
+                        ?>;    
+                    </div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
         </header>
