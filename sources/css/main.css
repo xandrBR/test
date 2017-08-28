@@ -175,7 +175,7 @@ header{
     opacity: 0.9;
 }
 .news{
-    width: 89%;
+    width: 83%;
     height: 100%;
 }
 .p_of_news{
@@ -186,7 +186,7 @@ header{
 .header_left{
     display: flex;
     flex-direction: column;
-    width: 10%;
+    width: 17%;
     height: 100%;
 }
 .settings{
@@ -199,7 +199,7 @@ header{
 .lang{
     position: relative;
     display: flex;
-    width: 35%;
+    width: 20%;
     height: 100%;
 }
 .ul_of_lang{
@@ -214,19 +214,13 @@ header{
     display: block;
 }
 .LK{
-    width: 65%;
+    width: 77%;
+    margin-right: 2%;
     height: 100%;
 }
-.steam_link{
-    display: block;
-    height:100%;
-    width: 100%;
-}
-.steam{
-    content: "";
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    margin: 2.5% 0% 0;
+.steam_button{
+    height: 85%;
+    margin-top: 0.5vh;
     width: 100%;
 }
 .img_of_lang_active{

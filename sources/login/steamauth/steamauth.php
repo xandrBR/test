@@ -6,16 +6,16 @@ function logoutbutton() {
 }
 
 function loginbutton($buttonstyle = "square") {
-	$button['rectangle'] = "01";
-	$button['square'] = "02";
-	$button = "<a href='?login'><img src='http".(isset($_SERVER['HTTPS']) ? "s" : "")."://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_".$button[$buttonstyle].".png'></a>";
+	$button['rectangle'] = "02";
+	$button['square'] = "01";
+	$button = "<a href='?login'><img class='steam_button' src='http".(isset($_SERVER['HTTPS']) ? "s" : "")."://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_".$button[$buttonstyle].".png'></a>";
 	echo $button;
 }
 
 if (isset($_GET['login'])){
-	require 'openid.php';
+	include 'openid.php';
 	try {
-		require 'SteamConfig.php';
+		include 'SteamConfig.php';
 		$openid = new LightOpenID($steamauth['domainname']);
 		
 		if(!$openid->mode) {
@@ -54,19 +54,23 @@ if (isset($_GET['login'])){
 }
 
 if (isset($_GET['logout'])){
-	require 'SteamConfig.php';
+	include 'SteamConfig.php';
 	session_unset();
 	session_destroy();
 	header('Location: '.$steamauth['logoutpage']);
 	exit;
 }
-	echo 'It is so eazy';
 
 if (isset($_GET['update'])){
 	unset($_SESSION['steam_uptodate']);
-	require 'userInfo.php';
+	include 'userInfo.php';
 	header('Location: '.$_SERVER['PHP_SELF']);
 	exit;
 }
 // Version 3.2
-loginbutton();
+<<<<<<< HEAD
+?>
+=======
+
+?>
+>>>>>>> parent of 19c10b1... steamauth2

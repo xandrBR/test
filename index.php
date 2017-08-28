@@ -1,17 +1,21 @@
+<?php
+ include 'sources/login/steamauth/steamauth.php'
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>                 
     <meta charset="UTF-8">
     <title>Abstract</title>
     <link rel="stylesheet" href="sources/css/reset.css">
-    <link rel="stylesheet" href="sources/css/main.css">
+    <link rel="stylesheet" href="sources/css/main.css?1">
     <link rel="stylesheet" href="sources/css/index.css">
+    
 </head>
 <body>
 <wrapper>
     <asside>
         <div class="logo">
-            <a href="../../index.html" class="title">
+            <a href="../../index.php" class="title">
                 <img alt="" class="img_logo" src="sources/ico/i1.svg"><h3>Abstract</h3>
             </a>
             <div class="second_title_text">Sait</div>
@@ -19,7 +23,7 @@
         <nav>
             <ul class="ul_of_nav">
                 <a href="sources/second/item1.php" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #1</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
-                <a href="sources/second/item2.html" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #2</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
+                <a href="sources/second/item2.php" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #2</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #3</strong></p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #4</strong></p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #5</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
@@ -44,7 +48,7 @@
             <div class="header_left">
                 <div class="settings">
                     <div class="lang" onclick="nav_lang();">
-                        <form action="sources/second/404_page.html" method="POST" target="_blank">
+                        <form action="sources/second/404_page.php" method="POST" target="_blank">
                             <ul class="ul_of_lang" id='langs'>
                                 <li class="li_of_lang1"><img alt="" class="img_of_lang" src="sources/ico/flags/russia.png"></li>
                                 <li class="li_of_lang"><input type="image" alt="" name="lang" value="us" class="img_of_lang" src="sources/ico/flags/states.png"></li>
@@ -55,14 +59,22 @@
                         </form>
                     </div>
                     <div class="LK">
-                        
+<<<<<<< HEAD
+                        <?php
+                            loginbutton();
+                        ?>
+=======
+                        <?php require 'sources/login/steamauth/steamauth.php';
+                            loginbutton();
+                        ?>;    
+>>>>>>> parent of 19c10b1... steamauth2
                     </div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
         </header>
         <div class="conteiner">
             <div class="box"> <!--внутренний бокс контейнера, который видим и имеет отступ от контейнера-->
-                <div class="conteiner_of_box_content"> <!-- для отступов-->
+                <div class="conteiner_of_box_content"> <!-- для отступов--> 
                     <div class="top_box">
                         <div class="slaider"> <!--слайдер-->
                             <a class="slaider_link"><img alt="" class="slaid_active"  id="slaid1" src="sources/background/w3.jpg"></a>
@@ -71,16 +83,20 @@
                             <div id="slaid_switchers" class="switchers">
                                 <div id="switch_conteiner#1" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_prev();" class="switcher_conteiner"><div class="switcher" id="prev"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></div></div>
                                 <div id="switch_conteiner#2" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_next();" class="switcher_conteiner"><div class="switcher" id="next"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></div></div>
+<<<<<<< HEAD
+=======
 
-                             <?php include 'sources/login/steamauth/steamauth.php';   ?>
+                            
+
+>>>>>>> parent of 19c10b1... steamauth2
                             </div>
                         </div>
-                            <p class="p1">Побед</p>
+                            <p class="p1"></p>
                         <div class="counter_of_wins">
                             <div class="wins">
                                 1000
                             </div>
-                            <p class="p1">Поражений</p>
+                            <p class="p1"></p>
                             <div class="wins">0</div> 
                         </div> <!--блок кол-во побед и поражений-->
                         <div class="VK_social">ВК</div> <!--VK-->
@@ -131,14 +147,14 @@
             <div class="chat" id="chat">
                 <div class="chat_title" onclick="show_and_hide_chat()" id="chat_title">Чат</div>
                 <div class="main_of_chat">
-					<?php require mini-chat.php; ?>
                     <!--чат здесь, и только здесь, остальное относящееся к чату не трогай-->
                 </div>
             </div>
         </footer>
     </main>
 </wrapper>
-<script src="sources/js/index.js"></script>
-<script src="sources/js/main.js?1"></script>
+
+<script src="sources/js/index.js?1"></script>
+<script src="sources/js/main.js?12"></script>
 </body>
 </html>

@@ -78,23 +78,3 @@ function nav_lang(){
         cnb=0;
     }
 }
-var Q=setInterval(function(){
-    var alts=document.getElementsByTagName("img");
-    for(var e=0; e<alts.length;++e){
-        alts[e].alt="";
-    }
-}, 10000);
-
-/*
-function new_lang(id,page){
-    //request new page numbered id 
-    var oldlang=document.getElementById("selectedlang");
-    var newlang=nav_bar[id];
-    var parlang=document.getElementById('langs');
-    parlang.replaceChild(newlang,oldlang);
-    oldlang.id='';
-    oldlang.class="li_of_lang";
-    newlang.id="selectedlang";
-    newlang.class="li_of_lang1";
-}
-*/
