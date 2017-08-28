@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+      <?php require 'sources/login/steamauth/steamauth.php';
+      loginbutton(); ?>;                      
     <meta charset="UTF-8">
     <title>Abstract</title>
     <link rel="stylesheet" href="sources/css/reset.css">
@@ -69,10 +71,13 @@
                             <div id="slaid_switchers" class="switchers">
                                 <div id="switch_conteiner#1" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_prev();" class="switcher_conteiner"><div class="switcher" id="prev"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></div></div>
                                 <div id="switch_conteiner#2" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_next();" class="switcher_conteiner"><div class="switcher" id="next"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></div></div>
+
+                            
+
                             </div>
                         </div>
-                        <div class="counter_of_wins">
                             <p class="p1">Побед</p>
+                        <div class="counter_of_wins">
                             <div class="wins">
                                 1000
                             </div>
@@ -127,6 +132,7 @@
             <div class="chat" id="chat">
                 <div class="chat_title" onclick="show_and_hide_chat()" id="chat_title">Чат</div>
                 <div class="main_of_chat">
+					<?php require mini-chat.php; ?>
                     <!--чат здесь, и только здесь, остальное относящееся к чату не трогай-->
                 </div>
             </div>

@@ -67,8 +67,6 @@ if (isset($_GET['update'])){
 	header('Location: '.$_SERVER['PHP_SELF']);
 	exit;
 }
-logoutbutton();
-loginbutton();
 // Version 3.2
 
 ?>
