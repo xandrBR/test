@@ -55,9 +55,7 @@
                         </form>
                     </div>
                     <div class="LK">
-                        <?php require 'sources/login/steamauth/steamauth.php';
-                            loginbutton();
-                        ?>;    
+                        
                     </div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
@@ -74,8 +72,7 @@
                                 <div id="switch_conteiner#1" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_prev();" class="switcher_conteiner"><div class="switcher" id="prev"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></div></div>
                                 <div id="switch_conteiner#2" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_next();" class="switcher_conteiner"><div class="switcher" id="next"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></div></div>
 
-                            
-
+                             <?php include 'sources/login/steamauth/steamauth.php';   ?>
                             </div>
                         </div>
                             <p class="p1">Побед</p>

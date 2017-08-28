@@ -60,6 +60,7 @@ if (isset($_GET['logout'])){
 	header('Location: '.$steamauth['logoutpage']);
 	exit;
 }
+	echo 'It is so eazy';
 
 if (isset($_GET['update'])){
 	unset($_SESSION['steam_uptodate']);
@@ -68,5 +69,4 @@ if (isset($_GET['update'])){
 	exit;
 }
 // Version 3.2
-
-?>
+loginbutton();
