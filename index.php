@@ -14,11 +14,11 @@
             <a href="../../index.html" class="title">
                 <img alt="" class="img_logo" src="sources/ico/i1.svg"><h3>Abstract</h3>
             </a>
-            <div class="second_title_text">элитная рулетка</div>
+            <div class="second_title_text">Sait</div>
         </div>
         <nav>
             <ul class="ul_of_nav">
-                <a href="sources/second/item1.html" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #1</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
+                <a href="sources/second/item1.php" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #1</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a href="sources/second/item2.html" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #2</p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #3</strong></p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #4</strong></p><img alt="" class="material-icons" src="sources/ico/i3.svg"></li></a>

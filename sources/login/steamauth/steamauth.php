@@ -1,7 +1,6 @@
 <?php
 ob_start();
 session_start();
-
 function logoutbutton() {
 	echo "<form action='' method='get'><button name='logout' type='submit'>Logout</button></form>"; //logout button
 }
@@ -10,7 +9,6 @@ function loginbutton($buttonstyle = "square") {
 	$button['rectangle'] = "01";
 	$button['square'] = "02";
 	$button = "<a href='?login'><img src='http".(isset($_SERVER['HTTPS']) ? "s" : "")."://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_".$button[$buttonstyle].".png'></a>";
-	
 	echo $button;
 }
 
@@ -69,7 +67,8 @@ if (isset($_GET['update'])){
 	header('Location: '.$_SERVER['PHP_SELF']);
 	exit;
 }
-
+logoutbutton();
+loginbutton();
 // Version 3.2
 
 ?>

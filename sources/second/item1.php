@@ -63,6 +63,7 @@
             <div class="box"> <!--внутренний бокс контейнера, который видим и имеет отступ от контейнера-->
                 <div class="conteiner_of_box_content"> <!-- для отступов-->
                     <a class="nav_link" href=classic.html><li class="li_of_nav"><p class="p_of_nav">Game</p><img class="material-icons" src="../ico/i3.svg"></li></a>
+                    <a class="nav_link" href=../login/steamauth/steamauth.php><li class="li_of_nav"><p class="p_of_nav">Login</p><img class="material-icons" src="../ico/i3.svg"></li></a>
                 </div>
             </div>
         </div>
