@@ -1,10 +1,13 @@
+<?php
+ include '../login/steamauth/steamauth.php'
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Abstract</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css?1">
     <link rel="stylesheet" href="../css/classic.css">
     <script src="../lib/jquery-3.2.1.min.js"></script>
 </head>
@@ -12,15 +15,15 @@
 <wrapper>
     <asside>
         <div class="logo">
-            <a href="../../index.html" class="title">
+            <a href="../../index.php" class="title">
                 <img class="img_logo" src="../ico/i1.svg"><h3>Abstract</h3>
             </a>
             <div class="second_title_text">элитная рулетка</div>
         </div>
         <nav>
             <ul class="ul_of_nav">
-                <a href="item1.html" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #1</p><img class="material-icons" src="../ico/i3.svg"></li></a>
-                <a href="item2.html" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #2</p><img class="material-icons" src="../ico/i3.svg"></li></a>
+                <a href="item1.php" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #1</p><img class="material-icons" src="../ico/i3.svg"></li></a>
+                <a href="item2.php" class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #2</p><img class="material-icons" src="../ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #3</strong></p><img class="material-icons" src="../ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav"><strong>Item #4</strong></p><img class="material-icons" src="../ico/i3.svg"></li></a>
                 <a class="nav_link"><li class="li_of_nav"><p class="p_of_nav">Item #5</p><img class="material-icons" src="../ico/i3.svg"></li></a>
@@ -45,7 +48,7 @@
             <div class="header_left">
                 <div class="settings">
                     <div class="lang" onclick="nav_lang();">
-                        <form action="404_page.html" method="POST" target="_blank">
+                        <form action="404_page.php" method="POST" target="_blank">
                             <ul class="ul_of_lang" id='langs'>
                                 <li class="li_of_lang1"><img class="img_of_lang" src="../ico/flags/russia.png"></li>
                                 <li class="li_of_lang"><input type="image" name="lang" value="us" class="img_of_lang" src="../ico/flags/states.png"></li>
@@ -55,7 +58,10 @@
                             </ul>
                         </form>
                     </div>
-                    <div class="LK"><a class="steam_link"><img class="steam" src="../img/steam_a.png"></a></div> <!--личный кабинет в начале кнопка-->
+                    <div class="LK">
+                    <?php
+                            loginbutton();
+                        ?></div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
         </header>
