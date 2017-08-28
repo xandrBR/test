@@ -68,9 +68,4 @@ if (isset($_GET['update'])){
 	exit;
 }
 // Version 3.2
-<<<<<<< HEAD
 ?>
-=======
-
-?>
->>>>>>> parent of 19c10b1... steamauth2

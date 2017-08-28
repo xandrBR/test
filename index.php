@@ -59,15 +59,9 @@
                         </form>
                     </div>
                     <div class="LK">
-<<<<<<< HEAD
                         <?php
                             loginbutton();
                         ?>
-=======
-                        <?php require 'sources/login/steamauth/steamauth.php';
-                            loginbutton();
-                        ?>;    
->>>>>>> parent of 19c10b1... steamauth2
                     </div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
@@ -83,12 +77,6 @@
                             <div id="slaid_switchers" class="switchers">
                                 <div id="switch_conteiner#1" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_prev();" class="switcher_conteiner"><div class="switcher" id="prev"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></div></div>
                                 <div id="switch_conteiner#2" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_next();" class="switcher_conteiner"><div class="switcher" id="next"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></div></div>
-<<<<<<< HEAD
-=======
-
-                            
-
->>>>>>> parent of 19c10b1... steamauth2
                             </div>
                         </div>
                             <p class="p1"></p>
