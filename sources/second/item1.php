@@ -12,7 +12,7 @@
 <wrapper>
     <asside>
         <div class="logo">
-            <a href="../../index.html" class="title">
+            <a href="../../index.php" class="title">
                 <img alt="" class="img_logo" src="../ico/i1.svg"><h3>Abstract</h3>
             </a>
             <div class="second_title_text">элитная рулетка</div>

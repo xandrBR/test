@@ -43,7 +43,6 @@ function scroll(iCCL,b,alpha) {
         }else{
             CC.style.left=iCCL+"px";
         }
-        
     }
     return iCCL;
 }
@@ -102,12 +101,30 @@ function cleaner(){
         clearInterval(e);
     }
 }
-
+function clean_all_items(){
+    var ccleaner=document.getElementsByClassName("carousel_item");
+    for(var e=0;e<ccleaner.length;++e){
+        CC.removeChild(ccleaner[e])
+    }
+}
+function create_items(){
+for(var i=1; i<=100;++i){
+    var q = rnd_abstract();
+    var $item = $('<img class="carousel_item" alt="">');
+    $item.attr('src','../img/items/'+q+'.png');
+    $item.attr('id','img'+i);
+    $item.insertAfter($CCF);
+}
+}
 function start() {
     if(acepted()){
     if(asd==1 || asd==2){
         cleaner();
         asd=0;
+    }
+    if (wasGame==1){
+        clean_all_items();
+        create_items();
     }
     var w = document.documentElement.clientWidth;
     var CFL=document.getElementById('first_layer');
@@ -124,21 +141,14 @@ function start() {
     prize.src='../img/items/'+whatprize+'.png';
     var alph=rnd(2,Beta.offsetWidth);
     var alpha=RpL+(CFLW/2)-alph;
+    wasGame=1;
     move(alpha,beta,alph,w);
     }
     else{alert('Потерянно соединение с сервером, перезагрузите страничку')}
 }
-
+var wasGame=0;
 var CCL = 0;
 var CC=document.getElementById('courusel_items');
 var $CCF = $('#fixer');
 var BGBut=document.getElementById('gb1');
-for(var i=1; i<=100;++i){
-    var q = rnd_abstract();
-    var $item = $('<img class="carousel_item">');
-    $item.attr('src','../img/items/'+q+'.png');
-    $item.attr('id','img'+i);
-    $item.attr('alt',"");
-    $item.insertAfter($CCF);
-    
-}
+create_items();
