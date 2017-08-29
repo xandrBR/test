@@ -59,9 +59,12 @@
                         </form>
                     </div>
                     <div class="LK">
-                    <?php
+                        <?php
                             loginbutton();
-                        ?></div> <!--личный кабинет в начале кнопка-->
+                            logoutbutton();
+                             include '../login/steamauth/userInfo.php'
+                        ?>
+                    </div> <!--личный кабинет в начале кнопка-->
                 </div>
             </div>
         </header>

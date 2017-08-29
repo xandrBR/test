@@ -61,6 +61,8 @@
                     <div class="LK">
                         <?php
                             loginbutton();
+                            logoutbutton();
+                             include 'sources/login/steamauth/userInfo.php'
                         ?>
                     </div> <!--личный кабинет в начале кнопка-->
                 </div>

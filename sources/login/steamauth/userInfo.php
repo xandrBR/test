@@ -37,7 +37,8 @@ $steamprofile['realname'] = $_SESSION['steam_realname'];
 $steamprofile['primaryclanid'] = $_SESSION['steam_primaryclanid'];
 $steamprofile['timecreated'] = $_SESSION['steam_timecreated'];
 $steamprofile['uptodate'] = $_SESSION['steam_uptodate'];
-
-// Version 3.2
+echo $steamprofile['personaname'];
+echo "<img src='".$steamprofile['avatarmedium']."'>";
+// Version 3.2s
 ?>
     
