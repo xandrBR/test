@@ -16,7 +16,7 @@
     <asside>
         <div class="logo">
             <a href="../../index.php" class="title">
-                <img alt="" class="img_logo" src="sources/ico/i1.svg"><h3>Abstract</h3>
+                <img alt="" class="img_logo" src="sources/ico/i1.svg"><h3 onclick="send_request('sources/backend/test.php','get',false);">Abstract</h3>
             </a>
             <div class="second_title_text">Sait</div>
         </div>

@@ -66,7 +66,6 @@
                             }else{
                              echo $steamprofile['personaname'];
                              echo "<img src='".$steamprofile['avatarmedium']."'>";
-                             
                             }
                         ?>
                     </div> <!--личный кабинет в начале кнопка-->

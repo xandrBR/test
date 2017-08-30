@@ -1,11 +1,3 @@
-var height_of_self_nav=0;
-var counter_of_self_navs_hides = 0;
-var counter_of_chat_hides = 0;
-var height_of_chat=0;
-var self_nav=document.getElementById("self_nav_id");
-var self_nav_title=document.getElementById("self_nav_title_id");
-var chat=document.getElementById("chat");
-var chat_title=document.getElementById("chat_title");
 function getXmlHttp(){
   var xmlhttp;
   try {
@@ -23,6 +15,24 @@ function getXmlHttp(){
   return xmlhttp;
 }
 
+var height_of_self_nav=0;
+var counter_of_self_navs_hides = 0;
+var counter_of_chat_hides = 0;
+var height_of_chat=0;
+var self_nav=document.getElementById("self_nav_id");
+var self_nav_title=document.getElementById("self_nav_title_id");
+var chat=document.getElementById("chat");
+var chat_title=document.getElementById("chat_title");
+function send_request(what,method,bool){
+    var req = getXmlHttp();
+req.open(method, what, bool);
+req.send();
+if (req.status != 200) {
+  alert( req.status + ': ' + req.statusText );
+} else {
+  alert( req.responseText);
+}
+}
 function show_and_hide_self_nav() {
     if (counter_of_self_navs_hides==0){
         self_nav_title.style.opacity="1"
