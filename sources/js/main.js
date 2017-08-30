@@ -23,16 +23,20 @@ var self_nav=document.getElementById("self_nav_id");
 var self_nav_title=document.getElementById("self_nav_title_id");
 var chat=document.getElementById("chat");
 var chat_title=document.getElementById("chat_title");
-function send_request(what,method,bool){
-    var req = getXmlHttp();
-req.open(method, what, bool);
+
+
+function send_request(method,what,bool){
+var req = getXmlHttp(method,what,bool);
+req.open();
 req.send();
 if (req.status != 200) {
-  alert( req.status + ': ' + req.statusText );
+  alert( req.status + ': 123' + req.statusText );
 } else {
   alert( req.responseText);
 }
 }
+
+
 function show_and_hide_self_nav() {
     if (counter_of_self_navs_hides==0){
         self_nav_title.style.opacity="1"
