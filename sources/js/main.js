@@ -26,8 +26,8 @@ var chat_title=document.getElementById("chat_title");
 
 
 function send_request(method,what,bool){
-var req = getXmlHttp(method,what,bool);
-req.open();
+var req = getXmlHttp();
+req.open(method,what,bool);
 req.send();
 if (req.status != 200) {
   alert( req.status + ': 123' + req.statusText );
