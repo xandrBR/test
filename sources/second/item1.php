@@ -60,11 +60,24 @@
                     </div>
                     <div class="LK">
                         <?php
-                            loginbutton();
-                            logoutbutton();
-                             include '../login/steamauth/userInfo.php'
+                         include '../login/steamauth/userInfo.php';
+                            if(empty($steamprofile['personaname'])){
+                                loginbutton();
+                            }else{
+                             echo $steamprofile['personaname'];
+                             echo "<img src='".$steamprofile['avatarmedium']."'>";
+                             
+                            }
                         ?>
                     </div> <!--личный кабинет в начале кнопка-->
+                    <div class='buttons'>
+                        <?php
+                    if(!empty($steamprofile['personaname'])){
+                        logoutbutton();
+                        echo "<form method='POST'><button>Buy Ar</button></form>";
+                    }
+                    ?>
+                    </div>
                 </div>
             </div>
         </header>

@@ -33,7 +33,7 @@
             </ul>
         </nav>
         <div class="subscribe">
-            <p class="subscribe_title">Мы в соц. сетях</p>
+            <p class="subscribe_title">We are in socials</p>
             <div class="subscribe_imgs">
                 <a><img alt="" src="sources/ico/social/u1.png" class="subscribe_img"></a>
                 <a><img alt="" src="sources/ico/social/u2.png" class="subscribe_img"></a>
@@ -44,7 +44,7 @@
     </asside>
     <main>
         <header>
-            <div class="news"><p class="p_of_news">Some strage text that no one<br>can underatand</p></div>
+            <div class="news"><p class="p_of_news">Some strage text that no one<br>can understand</p></div>
             <div class="header_left">
                 <div class="settings">
                     <div class="lang" onclick="nav_lang();">
@@ -60,11 +60,24 @@
                     </div>
                     <div class="LK">
                         <?php
-                            loginbutton();
-                            logoutbutton();
-                             include 'sources/login/steamauth/userInfo.php'
+                         include 'sources/login/steamauth/userInfo.php';
+                            if(empty($steamprofile['personaname'])){
+                                loginbutton();
+                            }else{
+                             echo $steamprofile['personaname'];
+                             echo "<img src='".$steamprofile['avatarmedium']."'>";
+                             
+                            }
                         ?>
                     </div> <!--личный кабинет в начале кнопка-->
+                    <div class='buttons'>
+                        <?php
+                    if(!empty($steamprofile['personaname'])){
+                        logoutbutton();
+                        echo "<form method='POST'><button>Buy Ar</button></form>";
+                    }
+                    ?>
+                    </div>
                 </div>
             </div>
         </header>
@@ -81,15 +94,15 @@
                                 <div id="switch_conteiner#2" onmouseover="show_sw();" onmouseout="hide_sw();" onclick="skip_next();" class="switcher_conteiner"><div class="switcher" id="next"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></div></div>
                             </div>
                         </div>
-                            <p class="p1"></p>
                         <div class="counter_of_wins">
+                            <p class="p1">Victiries</p>
                             <div class="wins">
                                 1000
                             </div>
-                            <p class="p1"></p>
+                            <p class="p1">Looses</p>
                             <div class="wins">0</div> 
                         </div> <!--блок кол-во побед и поражений-->
-                        <div class="VK_social">ВК</div> <!--VK-->
+                        <div class="VK_social">VK</div> <!--VK-->
                     </div>
                     <div class="bottom_box">
                         <div class="week_top">
@@ -101,7 +114,7 @@
                                 <table class=table1>
                                     <tr>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></td>
-                                    <td class="td_of_players">1000</td>
+                                    <td class="td_of_players">online:1000</td>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></td>
                                     </tr>
                                 </table>
@@ -115,17 +128,17 @@
         </div>
         <footer>
             <div class="self_nav" id="self_nav_id">
-                <div class="self_nav_title" onclick="show_and_hide_self_nav();" id="self_nav_title_id">Личное меню</div>
+                <div class="self_nav_title" onclick="show_and_hide_self_nav();" id="self_nav_title_id">Self menu</div>
                 <div class="main_of_self_nav">
                     <div class="asside_af_self_nav">
                         <div class="self_nav_container">
                             <ul class="ul_of_self_nav">
-                                <a class="self_nav_link"><li class="li_of_self_nav">Личный кабинет</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Достижения</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Ранг</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Квест//Задачи</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Реферальный модуль</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Купить Ar</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">Self information</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">Achivments</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">Rang</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">Kvest//Tasks</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">Referal model</li></a>
+                                <a class="self_nav_link"><li class="li_of_self_nav">By Ar</li></a>
                             </ul>
                         </div>
                     </div>
@@ -135,7 +148,7 @@
                 </div>
             </div>
             <div class="chat" id="chat">
-                <div class="chat_title" onclick="show_and_hide_chat()" id="chat_title">Чат</div>
+                <div class="chat_title" onclick="show_and_hide_chat()" id="chat_title">Chat</div>
                 <div class="main_of_chat">
                     <!--чат здесь, и только здесь, остальное относящееся к чату не трогай-->
                 </div>

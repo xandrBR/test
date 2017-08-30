@@ -60,7 +60,13 @@
                     </div>
                     <div class="LK">
                     <?php
-                            loginbutton();
+                            include '../login/steamauth/userInfo.php';
+                            if(empty($steamprofile['personaname'])){
+                                loginbutton();
+                            }else{
+                             echo $steamprofile['personaname'];
+                             echo "<img src='".$steamprofile['avatarmedium']."'>";
+                            }
                         ?>
                             
                         </div> <!--личный кабинет в начале кнопка-->

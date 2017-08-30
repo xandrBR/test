@@ -29,5 +29,6 @@ function interval(){
 	var x4=setInterval(function(){
 		++q4;
 	},200)
-	alert("done!")
+	alert("done!");
 }
+alert("include");
