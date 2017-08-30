@@ -6,6 +6,22 @@ var self_nav=document.getElementById("self_nav_id");
 var self_nav_title=document.getElementById("self_nav_title_id");
 var chat=document.getElementById("chat");
 var chat_title=document.getElementById("chat_title");
+function getXmlHttp(){
+  var xmlhttp;
+  try {
+    xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+  } catch (e) {
+    try {
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (E) {
+      xmlhttp = false;
+    }
+  }
+  if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+    xmlhttp = new XMLHttpRequest();
+  }
+  return xmlhttp;
+}
 
 function show_and_hide_self_nav() {
     if (counter_of_self_navs_hides==0){
