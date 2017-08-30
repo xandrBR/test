@@ -1,4 +1,5 @@
 <?php
-sleep(3);
-echo 'I want to kill the world';
+require "../login/steamauth/steamauth.php";
+echo 'I want to kill the world\n';
+loginbutton();
 ?>

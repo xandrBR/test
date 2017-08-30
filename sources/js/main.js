@@ -32,8 +32,9 @@ req.send();
 if (req.status != 200) {
   alert( req.status + ': 123' + req.statusText );
 } else {
-  alert( req.responseText);
+  alert(req.responseText);
 }
+alert('done');
 }
 
 
