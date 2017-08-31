@@ -100,3 +100,18 @@
     margin: 2vh;
     height: 10vh;
 }
+.kits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: overlay;
+}
+.kit{
+    height: 20vh;
+    width: 40vh;
+    margin-top: 5vh;
+}
+.conteiner_of_box_content{
+    justify-content: baseline;
+}

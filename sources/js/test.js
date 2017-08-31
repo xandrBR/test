@@ -31,4 +31,3 @@ function interval(){
 	},200)
 	alert("done!");
 }
-alert("include");

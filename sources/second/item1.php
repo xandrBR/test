@@ -8,7 +8,7 @@
     <title>Abstract</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css?1">
-    <link rel="stylesheet" href="../css/classic.css">
+    <link rel="stylesheet" href="../css/classic.css?2">
     <script src="../lib/jquery-3.2.1.min.js"></script>
 </head>
 <body>
@@ -83,10 +83,10 @@
         <div class="conteiner">
             <div class="box"> <!--внутренний бокс контейнера, который видим и имеет отступ от контейнера-->
                 <div class="conteiner_of_box_content"> <!-- для отступов-->
-                    <a class="nav_link" href=classic.php><li class="li_of_nav"><p class="p_of_nav">Game</p><img class="material-icons" src="../ico/i3.svg"></li></a>
-
-                    <button onclick="send_request('post','abstract.ru',true)">request</button>
-
+                    <?php
+                        require '../backend/kits.php';
+                         include_kits();
+                    ?>
                 </div>
             </div>
         </div>

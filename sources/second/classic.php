@@ -98,7 +98,13 @@
                     </div>
                     <div class="about_game" id="id_about_game">
                     <div id="fixer_ag"></div>
-
+                    <?php
+                    if($_GET['kit']="1"){
+                        echo "<script src='../js/test.js'></script><script>fulling(101);</script>";
+                    }else{
+                        echo "<script src='../js/test.js'></script><script>fulling(1);</script>";
+                    }
+                    ?>
                     </div>
                 </div>
             </div>

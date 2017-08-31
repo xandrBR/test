@@ -114,7 +114,11 @@
                                 <table class=table1>
                                     <tr>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></td>
-                                    <td class="td_of_players">online:1000</td>
+                                    <td class="td_of_players" id="#onlinebar-text"><p>online:
+                                    <?php
+                                        require 'sources/backend/online.php';
+                                     ?>
+                                    </p></td>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></td>
                                     </tr>
                                 </table>
