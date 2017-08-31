@@ -85,7 +85,7 @@
                 <div class="conteiner_of_box_content"> <!-- для отступов-->
                     <a class="nav_link" href=classic.php><li class="li_of_nav"><p class="p_of_nav">Game</p><img class="material-icons" src="../ico/i3.svg"></li></a>
 
-                    <button onclick="send_request('post','../backend/test.php',true)">request</button>
+                    <button onclick="send_request('post','abstract.ru',true)">request</button>
 
                 </div>
             </div>
