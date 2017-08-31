@@ -10,9 +10,11 @@ function include_kits(){
 	}
 	echo "</form>";
 }
-
 function Ionline(){
 	$data=date("G");
-	echo $data;
+	if($data>0 && $data<5){
+		$online= random_int (100,)
+		echo 
+	}
 }
 ?>
