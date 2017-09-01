@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="sources/css/reset.css">
     <link rel="stylesheet" href="sources/css/main.css?1">
     <link rel="stylesheet" href="sources/css/index.css">
-    
+    <script src="sources/lib/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <wrapper>
@@ -115,9 +115,7 @@
                                     <tr>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i7%20(skip%20next).svg"></td>
                                     <td class="td_of_players" id="#onlinebar-text"><p>online:
-                                    <?php
-                                        require 'sources/backend/online.php';
-                                     ?>
+                                    
                                     </p></td>
                                     <td class="td_of_players"><img alt="" src="sources/ico/i8%20(skip%20prev).svg"></td>
                                     </tr>
@@ -137,18 +135,18 @@
                     <div class="asside_af_self_nav">
                         <div class="self_nav_container">
                             <ul class="ul_of_self_nav">
-                                <a class="self_nav_link"><li class="li_of_self_nav">Self information</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Achivments</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Rang</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Kvest//Tasks</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Referal model</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">By Ar</li></a>
+                                <a class="self_nav_link" onclick='sncf(1);'><li class="li_of_self_nav">Self information</li></a>
+                                <a class="self_nav_link" onclick='sncf(2);'><li class="li_of_self_nav">Achivments</li></a>
+                                <a class="self_nav_link" onclick='sncf(3);'><li class="li_of_self_nav">Rang</li></a>
+                                <a class="self_nav_link" onclick='sncf(4);'><li class="li_of_self_nav">Kvest//Tasks</li></a>
+                                <a class="self_nav_link" onclick='sncf(5);'><li class="li_of_self_nav">Referal model</li></a>
+                                <a class="self_nav_link" onclick='sncf(6);'><li class="li_of_self_nav">By Ar</li></a>
                             </ul>
                         </div>
                     </div>
-                    <div class="self_nav_content">
+                    <iframe src='sources/self_menu/1.php' class="self_nav_content" id="snc">
                         <!-- это та часть, которая зависит от пользователя (backend), остальное в self nav не трогай-->
-                    </div>
+                    </iframe>
                 </div>
             </div>
             <div class="chat" id="chat">
@@ -162,6 +160,6 @@
 </wrapper>
 
 <script src="sources/js/index.js?1"></script>
-<script src="sources/js/main.js?12"></script>
+<script src="sources/js/main.js?13"></script>
 </body>
 </html>

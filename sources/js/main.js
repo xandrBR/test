@@ -66,6 +66,30 @@ function show_and_hide_self_nav() {
         self_nav_title.style.opacity="0.9"
     }
 }
+snc=document.getElementById('snc');
+function sncf(a){
+    switch(a){
+        case 1:
+            snc.src="sources/self_menu/1.php";
+            break;
+        case 2:
+            snc.src="sources/self_menu/2.php";
+            break;
+        case 3:
+            snc.src="sources/self_menu/3.php";
+            break;
+        case 4:
+            snc.src="sources/self_menu/4.php";
+            break;
+        case 5:
+            snc.src="sources/self_menu/5.php";
+            break;
+        case 6:
+            snc.src="sources/self_menu/6.php";
+            break;
+    }
+    
+}
 function show_and_hide_chat() {
     if (counter_of_chat_hides==0){
         chat_title.style.opacity="1"
