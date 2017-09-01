@@ -13,8 +13,6 @@ function include_kits(){
 function Ionline(){
 	$data=date("G");
 	if($data>0 && $data<5){
-		$online= random_int (100,)
-		echo 
 	}
 }
 ?>
