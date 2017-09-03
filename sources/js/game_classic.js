@@ -25,7 +25,7 @@ function rnd_abstract(){
     else if(x>67 && x<70){
         return 3;
     }
-    else if(x> 77.7 && x<78){
+    else if(x> 77.7 && x<79){
         return 4;
     }
     else{

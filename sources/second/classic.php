@@ -116,18 +116,18 @@
                     <div class="asside_af_self_nav">
                         <div class="self_nav_container">
                             <ul class="ul_of_self_nav">
-                                <a class="self_nav_link"><li class="li_of_self_nav">Личный кабинет</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Достижения</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Ранг</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Квест//Задачи</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Реферальный модуль</li></a>
-                                <a class="self_nav_link"><li class="li_of_self_nav">Купить Ar</li></a>
+                                <a class="self_nav_link" onclick='sncf2(1);'><li class="li_of_self_nav">Self information</li></a>
+                                <a class="self_nav_link" onclick='sncf2(2);'><li class="li_of_self_nav">Achivments</li></a>
+                                <a class="self_nav_link" onclick='sncf2(3);'><li class="li_of_self_nav">Rang</li></a>
+                                <a class="self_nav_link" onclick='sncf2(4);'><li class="li_of_self_nav">Kvest//Tasks</li></a>
+                                <a class="self_nav_link" onclick='sncf2(5);'><li class="li_of_self_nav">Referal model</li></a>
+                                <a class="self_nav_link" onclick='sncf2(6);'><li class="li_of_self_nav">By Ar</li></a>
                             </ul>
                         </div>
                     </div>
-                    <div class="self_nav_content">
+                    <iframe src='sources/self_menu/1.php' class="self_nav_content" id="snc">
                         <!-- это та часть, которая зависит от пользователя (backend), остальное в self nav не трогай-->
-                    </div>
+                    </iframe>
                 </div>
             </div>
             <div class="chat" id="chat">
@@ -139,7 +139,7 @@
         </footer>
     </main>
 </wrapper>
-<script src="../js/main.js?2" type="text/javascript"></script>
+<script src="../js/main.js?3" type="text/javascript"></script>
 <script type="text/javascript" src="../js/game_classic.js?23"></script>
 <script type="text/javascript" src="../js/test.js"></script>
 </body>
