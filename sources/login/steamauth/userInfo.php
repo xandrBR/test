@@ -21,6 +21,7 @@ if (empty($_SESSION['steam_uptodate']) or empty($_SESSION['steam_personaname']))
 	$_SESSION['steam_primaryclanid'] = $content['response']['players'][0]['primaryclanid'];
 	$_SESSION['steam_timecreated'] = $content['response']['players'][0]['timecreated'];
 	$_SESSION['steam_uptodate'] = time();
+	//есть ли в базе данных этот человек, да ничего не делаем, нет добавляем в базу
 }
 
 $steamprofile['steamid'] = $_SESSION['steam_steamid'];

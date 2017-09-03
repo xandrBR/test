@@ -125,7 +125,7 @@
                             </ul>
                         </div>
                     </div>
-                    <iframe src='sources/self_menu/1.php' class="self_nav_content" id="snc">
+                    <iframe src='../self_menu/1.php' class="self_nav_content" id="snc">
                         <!-- это та часть, которая зависит от пользователя (backend), остальное в self nav не трогай-->
                     </iframe>
                 </div>
