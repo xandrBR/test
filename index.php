@@ -1,5 +1,5 @@
 <?php
- include 'sources/login/steamauth/steamauth.php'
+ include 'sources/login/steamauth/steamauth.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="LK">
                         <?php
-                         include 'sources/login/steamauth/userInfo.php';
+                        include 'sources/login/steamauth/userInfo.php';
                             if(empty($steamprofile['personaname'])){
                                 loginbutton();
                             }else{
