@@ -93,7 +93,7 @@
                         </div>
                     </div>
                     <div class="center_for_button">
-                        <div class="green_button" onclick='start()' id="gb1"><p class="click_me">Click Me!</p></div>
+                        <div class="green_button" onclick='start_game()' id="gb1"><p class="click_me">Click Me!</p></div>
                     </div>
                     </div>
                     <div class="about_game" id="id_about_game">
@@ -140,7 +140,7 @@
     </main>
 </wrapper>
 <script src="../js/main.js?3" type="text/javascript"></script>
-<script type="text/javascript" src="../js/game_classic.js?23"></script>
+<script type="text/javascript" src="../js/game_classic.js?24"></script>
 <script type="text/javascript" src="../js/test.js"></script>
 </body>
 </html>

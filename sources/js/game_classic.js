@@ -2,12 +2,19 @@ function acepted(){
     //sends a inquiry to the server,if server answering return true else return false (server function)
     return true;
 }
-
-function ask(){
-    //server function
-    return 5;
+function start_game()
+{
+    $.ajax({
+        url:'../backend/ask.php',
+        type: "POST",
+        data: ({
+            login : 'user',
+            pay : 30
+        }),
+        dataType: "html",
+        success: start
+    });
 }
-
 function rnd(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -121,7 +128,7 @@ for(var i=1; i<=100;++i){
     $item.insertAfter($CCF);
 }
 }
-function start() {
+function start(data) {
     if(acepted()){
     if(asd==1 || asd==2){
         cleaner();
@@ -136,7 +143,7 @@ function start() {
     var CFLW=CFL.offsetWidth;
     CC.style.left="0px";
     CCL=0;
-    var whatprize = ask();
+    var whatprize = data;
     var prize =document.getElementById('img10');
     var Beta = document.getElementById('img3');
     var beta = Beta.offsetLeft;
