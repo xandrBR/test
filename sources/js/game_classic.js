@@ -1,15 +1,17 @@
 function acepted(){
     //sends a inquiry to the server,if server answering return true else return false (server function)
     return true;
-}
+} 
 function start_game()
 {
+    var knc=document.getElementById('kit_num_cont');
+    var kncv=knc.value;
+    alert(kncv);
     $.ajax({
         url:'../backend/ask.php',
         type: "POST",
         data: ({
-            login : 'user',
-            pay : 30
+            kit : kncv
         }),
         dataType: "html",
         success: start
@@ -157,6 +159,13 @@ function start(data) {
     move(alpha,beta,alph,w);
     }
     else{alert('Потерянно соединение с сервером, перезагрузите страничку')}
+}
+function push_item(ca){
+    var AGC=document.getElementById("id_about_game");
+    var $fixer_ag=$("#fixer_ag");
+    var $item = $('<img class="about_game_item">');
+        $item.attr('src','../img/items/'+ ca +'.png');
+        $item.insertAfter($fixer_ag);
 }
 var wasGame=0;
 var CCL = 0;

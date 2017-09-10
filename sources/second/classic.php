@@ -1,6 +1,6 @@
 <?php
  include '../login/steamauth/steamauth.php'
-?>
+?> 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -97,14 +97,24 @@
                     </div>
                     </div>
                     <div class="about_game" id="id_about_game">
-                    <div id="fixer_ag"></div>
-                    <?php
-                    if($_GET['kit']="1"){
-                        echo "<script src='../js/test.js'></script><script>fulling(101);</script>";
-                    }else{
-                        echo "<script src='../js/test.js'></script><script>fulling(1);</script>";
-                    }
-                    ?>
+                        <div id="fixer_ag"></div>
+                        <script type="text/javascript" src="../js/game_classic.js?27"></script>
+                        <?php
+                        $count=18;
+                        for($i=1;$i<=$count;++$i){
+                            if($_GET['kit']==$i){
+                                //find in database, whow many items does the kit have got, for example 
+                                $mu = $i;
+                                for($j=1;$j<=$mu;++$j){
+                                    //find in db what's the picture in number, for ex
+                                    $pic= rand ( 1 , 5);
+                                    echo "<script>push_item(".$pic.")</script>";
+                                }
+                                break;
+                            }
+                        }
+                        echo "<input style='display:none;' id='kit_num_cont' type='text' name='qwert' value='".$_GET['kit']."'>";
+                        ?>
                     </div>
                 </div>
             </div>
@@ -140,7 +150,6 @@
     </main>
 </wrapper>
 <script src="../js/main.js?3" type="text/javascript"></script>
-<script type="text/javascript" src="../js/game_classic.js?24"></script>
 <script type="text/javascript" src="../js/test.js"></script>
 </body>
 </html>

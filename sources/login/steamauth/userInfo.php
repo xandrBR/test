@@ -21,18 +21,18 @@ if (empty($_SESSION['steam_uptodate']) or empty($_SESSION['steam_personaname']))
 	$_SESSION['steam_primaryclanid'] = $content['response']['players'][0]['primaryclanid'];
 	$_SESSION['steam_timecreated'] = $content['response']['players'][0]['timecreated'];
 	$_SESSION['steam_uptodate'] = time();
-<<<<<<< 1cc55c881c1d21550104df67413333c56190a966
+//<<<<<<< 1cc55c881c1d21550104df67413333c56190a966
 	//есть ли в базе данных этот человек, да ничего не делаем, нет добавляем в базу
-=======
-	require 'db.php';
-$date = date("H:i:s"); 
-$steamid = $_SESSION['steam_steamid'];
-$personaname = $_SESSION['steam_personaname'];
-$avatar = $_SESSION['steam_avatar'];
-$realname = $_SESSION['steam_realname']; 
-$query = "INSERT INTO `steam_bd`.`player_db` (`id`,`steamid`, `personaname`, `avatar`, `realname`, `date`) VALUES ('{$id}', '{$steamid}', '{$personaname}', '{$avatar}', '{$realname}', '{$date}')";
-$result = mysqli_query($connection, $query);
->>>>>>> 461ed3b1fcb57622c17a3bf9789cba0666d8c065
+//=======
+	//		require 'db.php';
+	//	$date = date("H:i:s"); 
+	//	$steamid = $_SESSION['steam_steamid'];
+	//	$personaname = $_SESSION['steam_personaname'];
+	//	$avatar = $_SESSION['steam_avatar'];
+	//	$realname = $_SESSION['steam_realname']; 
+	//	$query = "INSERT INTO `steam_bd`.`player_db` (`id`,`steamid`, `personaname`, `avatar`, `realname`, `date`) VALUES ('{$id}', '{$steamid}', '{$personaname}', '{$avatar}', '{$realname}', '{$date}')";
+	//	$result = mysqli_query($connection, $query);
+	//	>>>>>>> 461ed3b1fcb57622c17a3bf9789cba0666d8c065
 }
 
 
